@@ -2,7 +2,10 @@
 const { Router } = require("express");
 const routes = Router();
 
-const { getAllConsoles } = require("../controllers/consola.controller"); //requiero las funciones del controlador
+const { 
+   getAllConsoles,
+   setConsole
+ } = require("../controllers/consola.controller"); //requiero las funciones del controlador
 
 
 routes.get('/', (req,res) => {
@@ -11,5 +14,7 @@ routes.get('/', (req,res) => {
 });
 
 routes.get("/listConsolas", getAllConsoles);
+
+routes.post("/saveConsola",setConsole)
 
 module.exports = routes;

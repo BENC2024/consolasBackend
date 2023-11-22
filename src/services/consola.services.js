@@ -5,5 +5,10 @@ const listadoConsolas = async () => {
 	return await consolaSchema.find();
 };
 
+const guardarConsola = async (consola) => {
+   let nuevaConsola = new consolaSchema(consola);
+   return await nuevaConsola.save();
+ };
+
 module.exports = { listadoConsolas };
 
