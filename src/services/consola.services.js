@@ -10,5 +10,8 @@ const guardarConsola = async (consola) => {
    return await nuevaConsola.save();
  };
 
-module.exports = { listadoConsolas };
+module.exports = { 
+   listadoConsolas,
+   guardarConsola
+};
 
