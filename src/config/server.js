@@ -6,7 +6,7 @@ const consolaRoutes = require("../routes/consola.routes");
 const cors = require('cors');
 
 app.use(cors()); //MUY IMPORTANTE EL ORDEN DE EJECUCION DEL USE
-app.use(express.json()); // Utilice el formato json //MALDITOS PARENTESIS
+app.use(express.json()); // Utilice el formato json
 app.use(consolaRoutes);
 
 app.set("puerto",process.env.PORT || puerto);

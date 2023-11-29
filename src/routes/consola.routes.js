@@ -9,8 +9,8 @@ const {
 
 
 routes.get('/', (req,res) => {
-   console.log("Si realizó la conexion HPTAS!!");
-   res.send("Si realizo la conexion HPTAS!!");
+   console.log("Si realizó la conexion");
+   res.send("Si realizo la conexion");
 });
 
 routes.get("/listConsolas", getAllConsoles);
